@@ -1,3 +1,24 @@
-page-home {
-
+.content-home{
+    background-image: url('../../assets/imgs/bg1.jpg');
+    background-size: cover;
+    filter: blur(3px);
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+}
+.img-home{
+    contain: content;
+    background-color: transparent;
+    padding-top: 80%;
+    z-index: 2;
+    overflow: auto;
+    position: relative;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+.ion-img img {
+    width: inherit;
+    height: inherit;
 }
