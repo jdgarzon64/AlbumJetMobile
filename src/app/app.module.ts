@@ -7,17 +7,17 @@ import { MyApp } from './app.component';
 import { RegistryPageModule } from '../pages/registry/registry.module';
 import { RegistryTabPage } from '../pages/registry-tab/registry-tab';
 import { HomeProvider } from '../providers/home/home';
-import { HttpClientModule } from '@angular/common/http'; 
+import { HttpClientModule } from '@angular/common/http';
 import { SuperTabsModule } from 'ionic2-super-tabs';
-
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 @NgModule({
   declarations: [
     MyApp,
     RegistryTabPage
- 
   ],
   imports: [
     BrowserModule,
+    BrowserAnimationsModule,
     RegistryPageModule,
     HttpClientModule,
     IonicModule.forRoot(MyApp),
@@ -32,8 +32,8 @@ import { SuperTabsModule } from 'ionic2-super-tabs';
     StatusBar,
     SplashScreen,
     HomeProvider,
-    {provide: ErrorHandler, useClass: IonicErrorHandler},
-    
+    { provide: ErrorHandler, useClass: IonicErrorHandler },
+
   ],
 })
-export class AppModule {}
+export class AppModule { }
